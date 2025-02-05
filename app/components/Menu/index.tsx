@@ -25,7 +25,10 @@ export default function Menu() {
           </View>
           <Text style={styles.text}>Marcar presença</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.menuItem}>
+        <TouchableOpacity
+          style={styles.menuItem}
+          onPress={() => navigation.push('/screens/grade')}
+        >
           <Ionicons name="star-outline" size={30} color="white" />
           <Text style={styles.text}>Notas</Text>
         </TouchableOpacity>
