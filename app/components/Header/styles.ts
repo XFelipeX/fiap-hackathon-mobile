@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     top: 115,
     left: 28,
     width: '60%',
-    height: 280,
+    height: 300,
     backgroundColor: colors.thirdBackground  ,
     display: 'flex',
     flexDirection: 'column',
