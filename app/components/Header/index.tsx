@@ -4,15 +4,15 @@ import { useState } from 'react';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { Link, useRouter } from 'expo-router';
-// import { useAuth } from '@/context/AuthContext';
+import { useFirebase } from '@/app/contexts/FirebaseContext';
 
 export default function Header() {
   const navigation = useRouter();
   const [isOpen, setIsOpen] = useState(false);
+  const { logout } = useFirebase();
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-  // const { isAuthenticated, logout } = useAuth();
 
   return (
     <View style={styles.container}>
@@ -77,6 +77,16 @@ export default function Header() {
             }}
           >
             Contato
+          </Text>
+          <Text
+            style={styles.sidebarItems}
+            onPress={() => {
+              navigation.push('/screens/login');
+              setIsOpen(!isOpen);
+              logout();
+            }}
+          >
+            Sair
           </Text>
         </View>
       )}

@@ -8,5 +8,5 @@ import Presence from './screens/presence';
 import Timeline from './screens/timeline';
 
 export default function Index() {
-  return <Grade />;
+  return <Login />;
 }

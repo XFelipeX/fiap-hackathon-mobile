@@ -47,7 +47,7 @@ export default function Login() {
     });
 
     if (result.success) {
-      await login('felipe@email.com', '');
+      await login('', '');
       navigation.push('/screens/main');
     }
   };
