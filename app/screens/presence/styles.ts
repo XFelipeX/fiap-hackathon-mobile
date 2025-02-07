@@ -31,6 +31,18 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 100,
   },
+  confirmationBoxNotConfirmed:{
+    backgroundColor: '#dc3545',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    padding: 15,
+    borderRadius: 8,
+    marginBottom: 30,
+    width: '100%',
+    position: 'absolute',
+    top: 100
+  },
   hiddenInput: {
     position: 'absolute',
     width: 0,
